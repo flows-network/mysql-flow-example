@@ -1,0 +1,19 @@
+[package]
+name = "flows-mysql-example"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+log = "*"
+serde_json = "*"
+serde = "*"
+tokio_wasi = { version = "1.25.1", features = ["macros", "rt"] }
+mysql_async_wasi = "0.31"
+
+# flows
+flowsnet-platform-sdk = "0.1"
+webhook-flows = "0.4"

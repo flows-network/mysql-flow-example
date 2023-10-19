@@ -1,4 +1,4 @@
-# Flosw.network MySQL Example
+# A flow function with a MySQL backend for CRUD operations
 
 ## How it works
 
